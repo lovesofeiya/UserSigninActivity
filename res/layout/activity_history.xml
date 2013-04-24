@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/historyback"
+    android:orientation = "vertical" >
+
+  
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center_vertical|center_horizontal" >
+
+              <Button
+                  android:id="@+id/goBack"
+                  android:layout_width="47dp"
+                  android:layout_height="30dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginTop="5dp"
+                  android:background="@drawable/goback"
+                  android:onClick="goBack" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_vertical|center_horizontal"
+                  android:layout_marginLeft="50dp"
+                  android:layout_weight="0.38"
+                  android:text="History"
+                  android:textColor="#ffffff"
+                  android:textSize="30sp" />
+
+              <Button
+                  android:id="@+id/edit"
+                  android:layout_width="47dp"
+                  android:layout_height="30dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginTop="5dp"
+                  android:textColor="#ffffff"
+                  android:background="@drawable/buttonback1"
+                  android:onClick="edit" />
+          </LinearLayout>
+
+	    </LinearLayout>
+
+	    <upenn.edu.cis542.stepcalculator.HistoryGraphView
+	        android:id="@+id/historyGraph"
+	        android:layout_width="fill_parent"
+	    
+	        android:layout_height="136dp" />
+	    
+      <ListView
+          android:id="@+id/historyList"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:divider="@null"
+          android:focusable="false"
+          android:scrollbarAlwaysDrawVerticalTrack="true" >
+
+    </ListView>
+    
+
+    </LinearLayout>
+    
+  
